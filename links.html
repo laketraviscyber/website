@@ -77,3 +77,28 @@ permalink: /resources/
 		</tbody>
 	</table>
 </div>
+<br><br>
+
+<h2>Other Links</h2>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for item in site.data.files %}
+			{% if item.category == "other" %}
+				<tr>
+					<td>{{ item.docname }}</td>
+					<td>{{ item.description }}</td>
+					<td><a href="{{ item.filepath }}" target="_blank" class="button small">Download</a></td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+</div>

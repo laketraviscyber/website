@@ -1,74 +1,104 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Links - LT Cyber</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+---
+layout: page
+title: Resources
+permalink: /resources/
+---
+<h1 class="major">Resources</h1>
+<h2>Windows Links</h2>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for item in site.data.files %}
+			{% if item.category == "windows" %}
+				<tr>
+					<td>{{ item.docname }}</td>
+					<td>{{ item.description }}</td>
+					<td><a href="{{ item.filepath }}" target="_blank" class="button small">Download</a></td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+<br><br>
 
-		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="title">LT Cyber</a>
-				<nav>
-					<ul>
-						<li><a href="https://ltcyber.org">Home</a></li>
-					</ul>
-				</nav>
-			</header>
+<h2>Linux Links</h2>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for item in site.data.files %}
+			{% if item.category == "linux" %}
+				<tr>
+					<td>{{ item.docname }}</td>
+					<td>{{ item.description }}</td>
+					<td><a href="{{ item.filepath }}" target="_blank" class="button small">Download</a></td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+<br><br>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<h2>Packet Tracer Links</h2>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for item in site.data.files %}
+			{% if item.category == "pt" %}
+				<tr>
+					<td>{{ item.docname }}</td>
+					<td>{{ item.description }}</td>
+					<td><a href="{{ item.filepath }}" target="_blank" class="button small">Download</a></td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
+<br><br>
 
-				<!-- Main -->
-					<section id="main" class="wrapper">
-						<div class="inner">
-							<h1 class="major">Links</h1>
-							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
-							<h3>Windows Links</h3>
-							<p>CyberPatriot Interactive Demo</p>
-							<ul class="actions">
-								<li><a href="https://cp-demos.s3.amazonaws.com/CyberPatriot%2BInteractive%2BDemonstration%2B26%2BApril%2B2021+(2).zip" target="_blank" class="button primary icon solid fa-download">Download</a></li>
-							</ul>
-							<h3>Linux Links</h3>
-							<p>Ubuntu 20.04 ISO download</p>
-							<ul class="actions">
-								<li><a href="https://releases.ubuntu.com/20.04.3/ubuntu-20.04.3-desktop-amd64.iso" target="_blank" class="button primary icon solid fa-download">Download</a></li>
-							</ul>
-							<h3>Packet Tracer Links</h3>
-							<p>Packet Tracer Basics</p>
-							<ul class="actions">
-								<li><a href="PktTracerBasics.pdf" target="_blank" class="button primary icon solid fa-download">Download</a></li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-		<footer id="footer" class="wrapper style1-alt">
-			<div class="inner">
-				<ul class="menu">
-					<li>&copy; Lake Travis Cybersecurity Club.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</div>
-		</footer>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<h2>Other Links</h2>
+<div class="table-wrapper">
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody>
+		{% for item in site.data.files %}
+			{% if item.category == "other" %}
+				<tr>
+					<td>{{ item.docname }}</td>
+					<td>{{ item.description }}</td>
+					<td><a href="{{ item.filepath }}" target="_blank" class="button small">Download</a></td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,7 @@
+﻿blankspace,skillname,icon,description
+,Vulnerabiltiies,fa-exclamation-triangle,"Students learn about the different vulnerabilities that can exist on a computer and in networks, as well as how to remediate them."
+,Cyber Protection,fa-lock,"Students learn how to protect themselves while online, and different threats that can exist in on the internet, including phishing."
+,Network Security,fa-network-wired,"Students use Cisco Packet Tracer to learn IOS, and configure and secure simulated networks designed to be similar to a corporate envrionment."
+,System Hardening,fa-desktop,"Students learn about poor out-of-box security, and lean how to mitigate common vulnerabilities that are present in operating systems including Windows and Linux."
+,Cryptography,fa-link,"Students learn about different forms of encryption, as well as ways to break insecure algorithms."
+,Identity and Access Management,fa-user-shield,"Students learn about how to ensure least privileges for users, and audit users for potentially malicious activity."
